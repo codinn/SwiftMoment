@@ -23,5 +23,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "3.0"
   s.source       = { :git => "https://github.com/akosma/SwiftMoment.git", :tag => "v0.7" }
   s.source_files  = "SwiftMoment/SwiftMoment"
-  s.resources     = "SwiftMoment/SwiftMoment/MomentFromNow.bundle"
+  s.resource_bundles = { 
+    'MomentFromNow' => ['SwiftMoment/SwiftMoment/MomentFromNow.bundle']
+   }
 end
