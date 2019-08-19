@@ -39,6 +39,7 @@
 		28FE15261E93903E00773F39 /* MomentCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7559221DF9B03B00397CBF /* MomentCache.swift */; };
 		28FE15271E93903F00773F39 /* MomentCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7559221DF9B03B00397CBF /* MomentCache.swift */; };
 		28FE15281E93903F00773F39 /* MomentCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7559221DF9B03B00397CBF /* MomentCache.swift */; };
+		330F4BC8230A9521005642BB /* MomentFromNow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53CB62721C919E8000BA62E9 /* MomentFromNow.bundle */; };
 		3A6429C41A6D2C8700B10310 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C31A6D2C8700B10310 /* Operators.swift */; };
 		3A6429C61A6D33FA00B10310 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C51A6D33FA00B10310 /* Extensions.swift */; };
 		3A6429C81A6D345500B10310 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6429C71A6D345500B10310 /* DurationTests.swift */; };
@@ -78,6 +79,13 @@
 			remoteGlobalIDString = 285B8B491D057575008A6AD6;
 			remoteInfo = "SwiftMoment tvOS";
 		};
+		330F4BC6230A9510005642BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB0FB631A6D15F8006449DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330F4BBF230A94C0005642BB;
+			remoteInfo = MomentFromNow;
+		};
 		3AB0FB791A6D15F8006449DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AB0FB631A6D15F8006449DB /* Project object */;
@@ -101,6 +109,8 @@
 		2877F4DB1D06BCB900B66806 /* FromNowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromNowTests.swift; sourceTree = "<group>"; };
 		2877F4DF1D06BF0E00B66806 /* MomentFromNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentFromNow.swift; sourceTree = "<group>"; };
 		28C0DBC21D057D9F00279645 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F4BC0230A94C0005642BB /* MomentFromNow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentFromNow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F4BC2230A94C0005642BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6429C31A6D2C8700B10310 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		3A6429C51A6D33FA00B10310 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A6429C71A6D345500B10310 /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
@@ -144,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		330F4BBD230A94C0005642BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB681A6D15F8006449DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,12 +194,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330F4BC1230A94C0005642BB /* MomentFromNow */ = {
+			isa = PBXGroup;
+			children = (
+				330F4BC2230A94C0005642BB /* Info.plist */,
+			);
+			path = MomentFromNow;
+			sourceTree = "<group>";
+		};
 		3AB0FB621A6D15F8006449DB = {
 			isa = PBXGroup;
 			children = (
 				3A6CADA61AD9B48D00482995 /* MyPlayground.playground */,
 				3AB0FB6E1A6D15F8006449DB /* SwiftMoment */,
 				3AB0FB7B1A6D15F8006449DB /* SwiftMomentTests */,
+				330F4BC1230A94C0005642BB /* MomentFromNow */,
 				3AB0FB6D1A6D15F8006449DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +223,7 @@
 				285B8B4A1D057575008A6AD6 /* SwiftMoment.framework */,
 				285B8B531D057575008A6AD6 /* SwiftMoment tvOS Tests.xctest */,
 				28C0DBC21D057D9F00279645 /* SwiftMoment.framework */,
+				330F4BC0230A94C0005642BB /* MomentFromNow.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,6 +366,23 @@
 			productReference = 28C0DBC21D057D9F00279645 /* SwiftMoment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		330F4BBF230A94C0005642BB /* MomentFromNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330F4BC5230A94C0005642BB /* Build configuration list for PBXNativeTarget "MomentFromNow" */;
+			buildPhases = (
+				330F4BBC230A94C0005642BB /* Sources */,
+				330F4BBD230A94C0005642BB /* Frameworks */,
+				330F4BBE230A94C0005642BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomentFromNow;
+			productName = MomentFromNow;
+			productReference = 330F4BC0230A94C0005642BB /* MomentFromNow.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		3AB0FB6B1A6D15F8006449DB /* SwiftMoment iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0FB821A6D15F8006449DB /* Build configuration list for PBXNativeTarget "SwiftMoment iOS" */;
@@ -351,6 +395,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				330F4BC7230A9510005642BB /* PBXTargetDependency */,
 			);
 			name = "SwiftMoment iOS";
 			productName = SwiftMoment;
@@ -434,6 +479,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
 					};
+					330F4BBF230A94C0005642BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					3AB0FB6B1A6D15F8006449DB = {
 						CreatedOnToolsVersion = 6.1.1;
 						LastSwiftMigration = 0900;
@@ -456,6 +505,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3AB0FB621A6D15F8006449DB;
@@ -470,6 +520,7 @@
 				285B8B491D057575008A6AD6 /* SwiftMoment tvOS */,
 				285B8B521D057575008A6AD6 /* SwiftMoment tvOS Tests */,
 				28C0DBC11D057D9F00279645 /* SwiftMoment watchOS */,
+				330F4BBF230A94C0005642BB /* MomentFromNow */,
 			);
 		};
 /* End PBXProject section */
@@ -496,6 +547,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2877F4D61D06B42900B66806 /* MomentFromNow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F4BBE230A94C0005642BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330F4BC8230A9521005642BB /* MomentFromNow.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +635,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		330F4BBC230A94C0005642BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3AB0FB671A6D15F8006449DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +703,11 @@
 			isa = PBXTargetDependency;
 			target = 285B8B491D057575008A6AD6 /* SwiftMoment tvOS */;
 			targetProxy = 285B8B651D057779008A6AD6 /* PBXContainerItemProxy */;
+		};
+		330F4BC7230A9510005642BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330F4BBF230A94C0005642BB /* MomentFromNow */;
+			targetProxy = 330F4BC6230A9510005642BB /* PBXContainerItemProxy */;
 		};
 		3AB0FB7A1A6D15F8006449DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -783,6 +854,64 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		330F4BC3230A94C0005642BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MomentFromNow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.MomentFromNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		330F4BC4230A94C0005642BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MomentFromNow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.MomentFromNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1089,6 +1218,15 @@
 			buildConfigurations = (
 				28C0DBC81D057D9F00279645 /* Debug */,
 				28C0DBC91D057D9F00279645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330F4BC5230A94C0005642BB /* Build configuration list for PBXNativeTarget "MomentFromNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330F4BC3230A94C0005642BB /* Debug */,
+				330F4BC4230A94C0005642BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
