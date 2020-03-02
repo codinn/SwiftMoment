@@ -105,25 +105,19 @@ extension Moment {
 
     private func NSDateTimeAgoLocalizedStrings(_ key: String) -> String {
         // get framework bundle
-        guard let bundleIdentifier = Bundle(for: MomentBundle.self).bundleIdentifier  else {
-            return ""
-        }
+        let bundle = Bundle(for: MomentBundle.self)
 
-        guard let frameworkBundle = Bundle(identifier: bundleIdentifier) else {
-            return ""
-        }
-
-        guard let resourcePath = frameworkBundle.resourcePath else {
+        guard let resourcePath = bundle.resourcePath else {
             return ""
         }
 
         let bundleName = "MomentFromNow.bundle"
         let path = URL(fileURLWithPath: resourcePath).appendingPathComponent(bundleName)
-        guard let bundle = Bundle(url: path) else {
+        guard let resourceBundle = Bundle(url: path) else {
             return ""
         }
 
-        if let languageBundle = getLanguageBundle(bundle) {
+        if let languageBundle = getLanguageBundle(resourceBundle) {
             return languageBundle.localizedString(forKey: key, value: "", table: "NSDateTimeAgo")
         }
 
