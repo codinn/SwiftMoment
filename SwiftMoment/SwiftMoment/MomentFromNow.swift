@@ -104,39 +104,9 @@ extension Moment {
     }
 
     private func NSDateTimeAgoLocalizedStrings(_ key: String) -> String {
-        // get framework bundle
-        let bundle = Bundle(for: MomentBundle.self)
-
-        guard let resourcePath = bundle.resourcePath else {
-            return ""
-        }
-
-        let bundleName = "MomentFromNow.bundle"
-        let path = URL(fileURLWithPath: resourcePath).appendingPathComponent(bundleName)
-        guard let resourceBundle = Bundle(url: path) else {
-            return ""
-        }
-
-        if let languageBundle = getLanguageBundle(resourceBundle) {
-            return languageBundle.localizedString(forKey: key, value: "", table: "NSDateTimeAgo")
-        }
-
-        return ""
-    }
-
-    private func getLanguageBundle(_ bundle: Bundle) -> Bundle? {
-        let localeIdentifer = self.locale.identifier
-        if let languagePath = bundle.path(forResource: localeIdentifer, ofType: "lproj") {
-            return Bundle(path: languagePath)
-        }
-
-        let langDict = Locale.components(fromIdentifier: localeIdentifer)
-        let languageCode = langDict["kCFLocaleLanguageCodeKey"]
-        if let languagePath = bundle.path(forResource: languageCode, ofType: "lproj") {
-            return Bundle(path: languagePath)
-        }
-
-        return nil
+        guard let bundlePath = Bundle(for: MomentBundle.self).url(forResource: "MomentFromNow", withExtension: "bundle") else { return "" }
+        guard let localizationBundle = Bundle(url: bundlePath) else { return "" }
+        return NSLocalizedString(key, tableName: "NSDateTimeAgo", bundle: localizationBundle, comment: "")
     }
 
     private func getLocaleFormatUnderscoresWithValue(_ value: Double) -> String {
