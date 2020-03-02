@@ -737,6 +737,7 @@
 				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMoment;
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = appletvos;
@@ -763,6 +764,7 @@
 				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.SwiftMoment;
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = appletvos;
@@ -821,6 +823,7 @@
 				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-watchOS";
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = watchos;
@@ -847,6 +850,7 @@
 				INFOPLIST_FILE = SwiftMoment/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.SwiftMoment-watchOS";
 				PRODUCT_NAME = SwiftMoment;
 				SDKROOT = watchos;
@@ -1038,6 +1042,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
 				SKIP_INSTALL = YES;
@@ -1062,6 +1067,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
 				SKIP_INSTALL = YES;
@@ -1157,6 +1163,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
@@ -1182,6 +1189,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.akosma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftMoment;
